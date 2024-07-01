@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/addEcortInfo_screen.dart';
 import 'package:flutter_application_1/screens/addPaitientInfo_screen.dart';
+import 'package:flutter_application_1/videoCall/call_page.dart';
+import 'package:flutter_application_1/videoCall/home_page.dart';
 
 import '../entryPage.dart';
 
@@ -106,10 +108,11 @@ class AddScreen extends StatelessWidget {
               ),
             GestureDetector(
                 onTap: (() {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: ((context) {
-                    return AddEscortInfo();
-                  })));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const CallPage(callID: 'u1u2'),),);
+                  // Navigator.push(context,
+                  //     MaterialPageRoute(builder: ((context) {
+                  //   return HomePage();
+                  // })));
                 }),
                 child: Container(
                   width: 150,
@@ -120,7 +123,7 @@ class AddScreen extends StatelessWidget {
                   ),
                   child: const Center(
                     child: Text(
-                      'Add Escort',
+                      'Start Video Call',
                       style: TextStyle(
                         color: Colors.white,
                       ),
