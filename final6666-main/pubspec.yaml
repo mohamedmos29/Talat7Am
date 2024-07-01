@@ -58,6 +58,7 @@ dependencies:
   dio: ^5.4.3+1
   webview_flutter: ^4.8.0
   zego_uikit_prebuilt_call: ^4.12.9
+  url_launcher: ^6.3.0
   
 dev_dependencies:
   flutter_test:
